@@ -18,6 +18,7 @@ const App = () => {
                 <Hero/>
                 <Cocktails/>
                 <About/>
+                <Art/>
                 {/* <div className='100dvh'></div> */}
             </main>
         </>
