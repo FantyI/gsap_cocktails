@@ -18,7 +18,6 @@ const Art = () => {
             scrub: 1.5,
             end: 'bottom center',
             pin: true,
-            markers: true
          }
       }).to('.will-fade', {
          opacity: 0,
@@ -54,7 +53,7 @@ const Art = () => {
 
                <div className="cocktail-img">
                   <img
-                     src="public/images/under-img.jpg"
+                     src="./images/under-img.jpg"
                      alt="cocktail"
                      className='abs-center masked-img size-full object-contain'
                   />
