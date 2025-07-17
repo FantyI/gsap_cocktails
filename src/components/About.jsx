@@ -6,28 +6,25 @@ import React from 'react'
 function About() {
 
    useGSAP(() => {
-
-      const sloganSplit = new SplitText('.slogan', {type: 'words'})
+      const sloganSplit = new SplitText('.slogan', { type: 'words' })
       
       gsap.timeline({
          scrollTrigger: {
             trigger: '#about',
-            start: 'top 40%',
+            start: 'top 40%'
          }
-      })
-      .from(sloganSplit.words, {
+      }).from(sloganSplit.words, {
          yPercent: 100,
          opacity: 0,
          stagger: .02,
          ease: 'expo.out',
-         duration: .8
-      }, 0)
-      .from('.top-grid div, .bottom-grid div', {
+         duration: 0.8
+      }).from('.top-grid div, .bottom-grid div', {
          opacity: 0,
          stagger: .04,
          ease: 'power1.inOut',
          duration: 1
-      }, '-=0.5' )
+      }, '-=0.5')
    }, [])
 
    return (
@@ -44,7 +41,7 @@ function About() {
 
                <div className="sub-content">
                   <p>
-                     Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable. 
+                     Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable.
                   </p>
 
                   <div>

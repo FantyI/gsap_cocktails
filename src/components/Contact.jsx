@@ -7,7 +7,7 @@ import gsap from 'gsap'
 function Contact() {
    
    useGSAP(() => {
-      const titleSplit = new SplitText('.content h2', {type: 'words'})
+      const titleSplit = new SplitText('#contact h2', {type: 'words'})
       
       gsap.timeline({
          scrollTrigger: {
